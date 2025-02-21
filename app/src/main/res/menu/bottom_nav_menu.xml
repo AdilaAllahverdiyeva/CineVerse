@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24" />
+
+    <item
+        android:id="@+id/searchFragment"
+        android:title="Search"
+        android:icon="@drawable/baseline_search_24"/>
+
+    <item
+        android:id="@+id/savedFragment"
+        android:title="Saved"
+        android:icon="@drawable/baseline_beenhere_24" />
+
+    <item
+        android:id="@+id/downloadsFragment"
+        android:title="Downloads"
+        android:icon="@drawable/baseline_download_24" />
+
+    <item
+        android:id="@+id/meFragment"
+        android:title="Me"
+        android:icon="@drawable/baseline_person_24" />
+
+
+
+</menu>

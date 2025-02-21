@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment">
+
+    <!-- LoginFragment -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.cineverse.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action android:id="@+id/action_loginFragment_to_forgotPasswordFragment" app:destination="@id/forgotPasswordFragment" />
+        <action android:id="@+id/action_loginFragment_to_signupFragment" app:destination="@id/signupFragment" />
+        <action android:id="@+id/action_loginFragment_to_homeFragment" app:destination="@id/homeFragment" />
+    </fragment>
+
+    <!-- SignUpFragment -->
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.cineverse.SignUpFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_sign_up">
+        <action android:id="@+id/action_signupFragment_to_homeFragment" app:destination="@id/homeFragment" />
+    </fragment>
+
+    <!-- ForgotPasswordFragment -->
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.cineverse.ForgotPasswordFragment"
+        android:label="Forgot Password"
+        tools:layout="@layout/fragment_forgot_password">
+        <action android:id="@+id/action_forgotPasswordFragment_to_resetPasswordFragment" app:destination="@id/resetPasswordFragment">
+            <argument android:name="email" app:argType="string" />
+        </action>
+    </fragment>
+
+    <!-- ResetPasswordFragment -->
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.example.cineverse.ResetPasswordFragment"
+        android:label="Reset Password"
+        tools:layout="@layout/fragment_reset_password">
+        <argument android:name="email" app:argType="string" />
+        <action android:id="@+id/action_resetPasswordFragment_to_homeFragment" app:destination="@id/homeFragment" />
+    </fragment>
+
+    <!-- Bottom Navigation Fragments -->
+    <fragment android:id="@+id/homeFragment"
+        android:name="com.example.cineverse.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_mostPopularFragment"
+            app:destination="@id/mostPopularFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" >
+
+        </action>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.cineverse.DetailsFragment"
+        tools:layout="@layout/fragment_details">
+
+        <argument android:name="movie" app:argType="com.example.cineverse.Movie"
+            android:defaultValue="@null" app:nullable="true"/>
+
+        <action
+            android:id="@+id/action_detailsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+        <action
+            android:id="@+id/action_detailsFragment_to_savedFragment"
+            app:destination="@id/savedFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/searchFragment"
+        android:name="com.example.cineverse.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.example.cineverse.SavedFragment"
+        android:label="Saved Movies"
+        tools:layout="@layout/fragment_saved">
+
+        <action
+            android:id="@+id/action_savedFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+
+    <fragment android:id="@+id/downloadsFragment"
+        android:name="com.example.cineverse.DownloadsFragment"
+        android:label="Downloads"
+        tools:layout="@layout/fragment_downloads" />
+
+    <fragment android:id="@+id/meFragment"
+        android:name="com.example.cineverse.MeFragment"
+        android:label="Me"
+        tools:layout="@layout/fragment_me" >
+
+        <action
+            android:id="@+id/action_meFragment_to_loginFragment"
+            app:destination="@id/loginFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/mostPopularFragment"
+        android:name="com.example.cineverse.MostPopularFragment"
+        android:label="Most Popular"
+        tools:layout="@layout/fragment_most_popular" />
+
+</navigation>

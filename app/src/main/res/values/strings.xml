@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CineVerse</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="web_client_id">615308449106-1rpjou4pipaahi5l61ahqaq44b6trqev.apps.googleusercontent.com</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

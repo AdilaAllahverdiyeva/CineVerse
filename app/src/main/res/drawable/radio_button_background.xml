@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Seçildikdə fon qırmızı, mətn ağ -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FF0000"/> <!-- Qırmızı fon -->
+            <corners android:radius="20dp"/> <!-- Künclərin yuvarlaqlaşdırılması -->
+        </shape>
+    </item>
+
+    <!-- Seçilmədikdə fon şəffaf, mətn ağ -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#26233E"/> <!-- Şəffaf fon -->
+            <corners android:radius="20dp"/>
+            <stroke android:width="2dp" android:color="#26233E"/> <!-- Ağ çərçivə -->
+        </shape>
+    </item>
+
+</selector>

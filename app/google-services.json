@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "615308449106",
+    "project_id": "cineverse-eebf8",
+    "storage_bucket": "cineverse-eebf8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615308449106:android:5f274ff23a7cc3f6c9568b",
+        "android_client_info": {
+          "package_name": "com.example.cineverse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615308449106-1rpjou4pipaahi5l61ahqaq44b6trqev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0acQmDUGe5s6X_DV22ETBNpK92x1Voe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615308449106-1rpjou4pipaahi5l61ahqaq44b6trqev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

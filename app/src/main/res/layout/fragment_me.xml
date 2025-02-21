@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07041F"
+    android:orientation="vertical"
+    tools:context=".MeFragment">
+
+    <ImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="213dp"
+        android:layout_height="219dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/default_profile" />
+
+    <Button
+        android:id="@+id/btnChangePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:backgroundTint="#26233E"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="Change photo" />
+
+    <Button
+        android:id="@+id/logOutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:backgroundTint="#26233E"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Log out" />
+
+
+</LinearLayout>

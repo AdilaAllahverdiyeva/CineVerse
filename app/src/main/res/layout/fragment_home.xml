@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07041F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerSlider"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBarBanner"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Categories"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/categoryGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/allButton"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_button_background"
+                android:button="@null"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="All"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/actionButton"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/radio_button_background"
+                android:button="@null"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Action"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/comedyButton"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/radio_button_background"
+                android:button="@null"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Comedy"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/romanticButton"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/radio_button_background"
+                android:button="@null"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Romantic"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/dramaButton"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/radio_button_background"
+                android:button="@null"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Drama"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:textSize="18dp"
+               android:fontFamily="serif"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:text="Most Popular" />
+
+           <TextView
+               android:id="@+id/seeAllbtn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="210dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="serif"
+               android:text="See all"
+               android:textColor="@color/white"
+               android:textSize="14dp"
+               android:textStyle="bold" />
+
+       </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
